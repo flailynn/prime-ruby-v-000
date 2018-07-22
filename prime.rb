@@ -5,7 +5,7 @@ def prime?(number)
     false
   else
 
-    factor_array = (2..number).collect do |factor|
+    factor_array = (2..number).select do |factor|
       if number % factor == 0
         factor
       end
