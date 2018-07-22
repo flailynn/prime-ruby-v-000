@@ -10,6 +10,7 @@ def prime?(number)
         factor
       end
     end
+    binding.pry
     factor_array.size > 2 ? false : true
   end
 =begin
