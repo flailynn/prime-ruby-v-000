@@ -6,7 +6,9 @@ def prime?(number)
   else
 
     factor_array = (2..number).collect do |factor|
-      factor if number % factor == 0
+      if number % factor == 0
+        factor
+      end
     end
     factor_array.size > 2 ? false : true
   end
