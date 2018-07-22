@@ -5,12 +5,12 @@ def prime?(number)
     false
   else
 
-    factor_array = (1..number).select do |factor|
+    factor_array = (2..number).select do |factor|
       if number % factor == 0
         factor
       end
     end
-    factor_array.size > 2 ? false : true
+    factor_array.size > 1 ? false : true
   end
 =begin
   elsif number == 2 || number == 3
